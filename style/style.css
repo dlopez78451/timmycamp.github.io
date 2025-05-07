@@ -1,0 +1,226 @@
+.container {
+    position: relative;
+    width: calc(100% - 130px); /* Adjust width as needed */
+    margin: 0 auto;
+    display: flex;
+  }
+
+body {
+    font-family: Arial, Helvetica, verdana, sans-serif;
+    font-size: 87.5%;
+    width: 800px;
+    margin: 10px auto;
+    border: 8px solid #FF244E;
+    text-align: center;
+    background-color: rgb(255, 251, 246);
+    color: #333;
+}
+
+ul.nav-menu {
+    list-style-type: none;
+    padding: 0;
+    background-color: #FF244E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+}
+
+ul.nav-menu li {
+    margin: 0px 20px;
+}
+
+ul.nav-menu li a {
+    text-decoration: none;
+    color: #141414;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color:#FF244E;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+ul.nav-menu li a:hover {
+    background-color: #ff6483; /* Change to a different color on hover */
+    color:#fff;
+}
+
+
+section.bio {
+    margin: 30px 10px 30px 10px;
+}
+
+
+/* Target the specific button with the class name "special-button" */
+button{
+    background-color:#FF244E;
+    color: #141414;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+   margin-right: 5px;
+}
+
+/* Style the specific button on hover */
+button:hover {
+    background-color: #ff6483;
+    color: #fff;
+}
+
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #FF244E;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+  }
+  
+  #scrollToTopBtn:hover{
+    background-color: #ff6483
+  }
+
+  .charhead {
+    width: 100px; /* Adjust image width as needed */
+    position: absolute;
+    top: 10px; /* Adjust top position */
+    left: -60px; /* Adjust left position */
+    z-index: 1; /* Ensure it appears above other content */
+  }
+  .charhead2 {
+    width: 200px; /* Adjust image width as needed */
+    position: absolute;
+    top: 10px; /* Adjust top position */
+    left: -60px; /* Adjust left position */
+    z-index: 1; /* Ensure it appears above other content */
+  }
+  .charhead3 {
+    width: 200px; /* Adjust image width as needed */
+    position: absolute;
+    top: -50px; /* Adjust top position */
+    left: -60px; /* Adjust left position */
+    z-index: 1; /* Ensure it appears above other content */
+  }
+  .products {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px; /* Add padding for space around the grid */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .box {
+    width: 330px;
+    height: 350px;
+    font-size: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+    flex: 1 1 40%; /* Distribute boxes evenly */
+    overflow: hidden;
+  }
+
+
+  .box:hover {
+    transform: scale(1.05);
+  }
+
+  .box img {
+    max-width: 70%;
+    max-height: 70%;
+    margin-bottom: 15px;
+    cursor: pointer;
+  }
+
+  .box p {
+    margin: 0;
+    font-size: 15px;
+  }
+
+  .additional-info {
+    display: none; /* Initially hide additional info */
+    padding: 15px;
+    font-size: 14px;
+    text-align: left;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: height 0.3s ease, opacity 0.3s ease;
+    }
+
+    .expanded .additional-info {
+      height: auto;
+      opacity: 1;
+    }
+  
+    #map {
+        width: 400px;
+        height: 400px;
+        margin: 50px auto;
+        background: #f0f0f0;
+      }
+    
+      /********** TABS **********/
+      .tab-list {
+        margin-top: 50px;
+        padding: 0;}
+      
+      .tab-list li {
+        display: inline-block;
+        list-style-type: none;
+        background-color: #FF244E;
+        border-bottom: 3px solid #ff6483;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;}
+      
+      .tab-list li a {
+        color: #e6e6e6;
+        display: block;
+        padding: 3px 10px 3px 10px;}
+      
+      
+      /********** HOVER STATES **********/
+      .tab-list li.active, .tab-list li.hover {
+        background-color: #ffa3b6;
+        border-bottom: 3px solid #ffa3b6;}
+      
+      .tab-list li.active a, .tab-list li a:hover {
+        color: #333;
+        background-color: #ffa3b6;}
+      
+      
+      /********** PANELS **********/
+      .tab-panel {
+        display: none;
+        background-color: #ffa3b6;
+        color: #333;
+        min-height: 150px;
+        overflow: auto;
+      }
+      
+      .tab-panel.active {
+        display: block;
+        margin: 0 20px 20px 20px;
+      }
+      
+      .tab-panel p {
+        margin: 20px;}    
